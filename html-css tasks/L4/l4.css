@@ -1,0 +1,21 @@
+div{
+    background-color: white;
+    list-style: none;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: 20% auto;
+    padding: 2%;
+    text-decoration: none;
+}
+body{background-color: green;}
+header{
+     margin-top: 10px ;
+     font-style: italic;
+     font-weight: bolder;
+     font-size:x-large;
+}
+li{
+    padding: 3px;
+    font-size: larger;
+}

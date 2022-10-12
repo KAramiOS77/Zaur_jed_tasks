@@ -1,0 +1,43 @@
+/* body{
+    text-align: center;
+} */
+body ul{
+    text-align: center;
+}
+body ul li{
+    display: inline-block;
+    margin: 10px;
+    color: rgb(42, 164, 148);
+    font-weight: bold;
+    font-size: large;
+}
+body img{
+    background-color: white;
+    display: block;
+    max-width: 1600px;
+    height: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+body h2{
+    text-align: center;
+}
+body p{text-align: center;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+body h4 a{
+    text-align: center;
+    background:  rgb(42, 164, 148) ;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    
+}

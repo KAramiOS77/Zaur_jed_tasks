@@ -1,0 +1,20 @@
+h1{
+    text-align: center; 
+    background-color: aqua; 
+    color: rgb(87, 85, 85);
+}
+p{
+    background-color: rgb(222, 184, 135); 
+    width: 150; 
+    height: 250; 
+    text-align: justify;
+}
+
+h2{
+    width: 400;
+    height: 600;
+    background: #006666 center url(./Walter_White.png) no-repeat; 
+    text-align: center;
+    color: white;
+    /* background-size: auto */
+}
