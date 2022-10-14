@@ -1,0 +1,13 @@
+.emoji{
+    background-color: greenyellow;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.emoji::after{
+    content: "\2600";
+    color: yellow;
+}
+.emoji::selection{
+    background-color: red;
+}
