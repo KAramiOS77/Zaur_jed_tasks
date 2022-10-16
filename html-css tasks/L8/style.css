@@ -1,0 +1,36 @@
+header{
+    background-color: rgb(99, 99, 99);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 80px;
+    font-size: 40px;
+    padding-top: 5vh;
+    padding-left:3vh ;
+}
+h3{
+    list-style: none;
+    background: aqua;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    height: 5vh;
+    width: 200px;
+}
+.button{
+    width: 270px;
+    float: left;
+    height: 300px;
+}
+.content{
+
+}
+
+footer{
+    background-color:  rgb(99, 99, 99);
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    padding-top: 2.5vh;
+    padding-left:3vh ;
+    clear: both;
+}
