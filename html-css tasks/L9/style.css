@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(201, 73, 73);
+    margin: 0;
+}
+form{
+    background: white no-repeat;
+    border-radius: 17px;
+    display: block;
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 0 auto ;
+    margin-top: calc(50vh - 150px );
+}
+form>h2{
+    color:rgb(201, 73, 73) ;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: rgba(0, 0, 0, 0.12) solid;
+}
+form>input{
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    width: 100%;
+    border-color: rgba(0, 0, 0, 0.2);
+    height: 42px;
+    border-style: solid;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.8);
+}
+.sbmt_btn{
+    background-color:rgb(201, 73, 73)  ;
+    color: white;
+    font-size: larger;
+    width: 100%;
+    border-radius: 5px;
+    border-color: transparent;
+    box-sizing: border-box;
+}
+.sbmt_btn:hover{
+    cursor: pointer;
+}
+form>input:focus{
+    outline-color: rgb(201, 73, 73) ;
+}
+.username::after{
+    content:"";
+    
+}
+.email::after{
+
+}
+.password::after{
+
+}
