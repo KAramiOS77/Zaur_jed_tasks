@@ -45,9 +45,13 @@ form>input{
 form>input:focus{
     outline-color: rgb(201, 73, 73) ;
 }
-.username::after{
-    content:"";
-    
+/* .username::after{
+    position: relative;
+} */
+i{
+    position: absolute;
+    top: 335px;
+    right: 510px;
 }
 .email::after{
 
