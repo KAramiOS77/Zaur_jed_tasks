@@ -4,12 +4,13 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(3, 28vh) ;
     grid-gap: 10px;
    padding-left: 15px;
    padding-right: 15px;
    padding-top: 12px;
    padding-bottom: 25px;
+   box-sizing: border-box;
    
 
 
