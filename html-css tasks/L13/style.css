@@ -1,0 +1,56 @@
+body{
+    margin: ;
+}
+.pacman-top{
+    width: 200px;
+    height: 100px;
+    border-radius: 12rem 12rem 0 0 ;
+    background-color: yellow;
+    animation: rotating-top 300ms;
+    border: 0px solid;
+    transform-origin: bottom;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+
+
+}
+.pacman-eye{
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 12rem 12rem 12rem 12rem; 
+   right: 60px;
+   position: absolute;
+   bottom: 25px;
+
+  
+    
+}
+.pacman-bottom{
+    width: 200px;
+    height: 100px;
+    border-radius: 0 0 12rem 12rem  ;
+    background-color: yellow;
+    animation: rotating-bottom 300ms;
+    border: 0px solid;
+    transform-origin: top;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rotating-top {
+    0%{transform: rotateZ(0deg);
+
+    }
+    100%{transform: rotateZ(-45deg);
+
+    }
+}
+@keyframes rotating-bottom {
+    0%{transform: rotateZ(0deg); 
+
+    }
+    100%{transform: rotateZ(45deg);
+
+    }
+}
