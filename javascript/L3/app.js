@@ -1,6 +1,7 @@
 // Task1. Ureyimde bir reqem tutmusam 0-dan 50ye qeder. User her defesinde hemin ededi sorusun. Eger sehvdirse, yeniden sorussun. Duz olanda, kapital bank hesabinda 1000 manat kocurulsun console-a cixarin.
 
-let randomEded = parseInt(Math.random() * 100 - 49);
+let randomEded = parseInt(Math.random() * 100 - 49); 
+// A: fix please Math.random() * 50. Ehtiyac yoxdu, 100e qeder verib, 49 cixmaqdan
 let userEded = Number(prompt("Ededi daxil edin:"));
 let say = 1;
 while (randomEded !== userEded) {
@@ -31,6 +32,7 @@ let ed = Number(
 let cem = 0;
 for (a = 1; a <= ed; a++) {
   cem = cem + a;
+  //A: cem+=a
 }
 console.log(` 1 den ${ed} edede qeder olan ededlerin cemi  ${cem} edir.`);
 
@@ -47,6 +49,7 @@ for (let n = 4; n >= 1; n--) {
 let eded = Number(prompt("Faktorialini tapmaq istediyiniz ededi daxil edin: "));
 let fact = 1;
 for (z = 1; z <= eded; z++) {
+  //A: let z
   fact = fact * z;
 }
 console.log(` ${eded} ededinin faktoriali ${fact} edir.`);
