@@ -29,8 +29,8 @@ let ed = Number(
   )
 );
 let cem = 0;
-for (a = 1; a <= ed; a++) {
-  cem = cem + a;
+for (let a = 1; a <= ed; a++) {
+  cem += a;
 }
 console.log(` 1 den ${ed} edede qeder olan ededlerin cemi  ${cem} edir.`);
 
@@ -46,7 +46,7 @@ for (let n = 4; n >= 1; n--) {
 
 let eded = Number(prompt("Faktorialini tapmaq istediyiniz ededi daxil edin: "));
 let fact = 1;
-for (z = 1; z <= eded; z++) {
-  fact = fact * z;
+for (let z = 1; z <= eded; z++) {
+  fact *= z;
 }
 console.log(` ${eded} ededinin faktoriali ${fact} edir.`);
