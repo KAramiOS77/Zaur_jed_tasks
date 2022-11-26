@@ -1,3 +1,4 @@
+// done ✅ and super task and got 🍕
 function getNumber() {
   return +prompt("Type number:");
 }
