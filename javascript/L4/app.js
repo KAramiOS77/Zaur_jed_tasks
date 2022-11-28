@@ -1,3 +1,4 @@
+// Done ✅
 function getNumber() {
   return +prompt("Type number:");
 }
