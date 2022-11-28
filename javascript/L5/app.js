@@ -1,3 +1,4 @@
+// A: return etmeye ehtiyac yoxdu. callback-e arqument kimi verilmelidir. 
 function add(a, b, callback) {
   callback();
   return a + b;
