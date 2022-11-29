@@ -17,6 +17,10 @@ deepclone(obj1, obj2);
 console.log(obj2, obj1);
 
 // A: Object.assign ve ya spread operatoru daha yaxsi olardi. // Asagidaki kimi bir funksiya yazdim, ancaq alinmadi ((
+
+// A:  return etmemisen)))
+
+
 // function deepcloneV2(a, b) {
 //   b = Object.assign({}, a);
 // }
