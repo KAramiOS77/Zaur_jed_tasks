@@ -1,10 +1,26 @@
-// A: return etmeye ehtiyac yoxdu. callback-e arqument kimi verilmelidir. 
+// Task 1
 function add(a, b, callback) {
-  callback();
-  return a + b;
+  if (callback === console.log) {
+    console.log(a + b);
+  } else if (callback === alert) {
+    alert(a + b);
+  }
 }
-//A: "" dirnaqlari yigisdiraq z/o
-add(5, 6, "alert");
 
-// A: callback-e ehtiyac yoxdur 
-function callback() {}
+add(5, 6, console.log);
+
+// Task 2
+function gender(cins) {
+  if (cins === "K") {
+    return function (name) {
+      console.log(`Cənab ${name}`);
+    };
+  } else if (cins === "Q")
+    return function (name) {
+      console.log(`Xanım ${name}`);
+    };
+}
+const forMan = gender("K");
+forMan("Kərəm");
+const forWoman = gender("Q");
+forWoman("Əsli");
