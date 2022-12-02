@@ -8,20 +8,21 @@ let obj2 = {};
 
 // // obj2 = Object.assign({}, obj1); // // funsiyasız
 
-function deepclone(a, b) {
-  for (let key in a) {
-    b[key] = a[key];
-  }
-}
-deepclone(obj1, obj2);
-console.log(obj2, obj1);
+// function deepclone(a, b) {
+//   for (let key in a) {
+//     b[key] = a[key];
+//   }
+// }
+// deepclone(obj1, obj2);
+// console.log(obj2, obj1);
 
 // A: Object.assign ve ya spread operatoru daha yaxsi olardi. // Asagidaki kimi bir funksiya yazdim, ancaq alinmadi ((
-// function deepcloneV2(a, b) {
-//   b = Object.assign({}, a);
-// }
-// deepcloneV2(obj1, obj2);
-// console.log(obj2, obj1);
+function deepcloneV2(a, b) {
+  b = Object.assign({}, a);
+  return (b = {});
+}
+deepcloneV2(obj1, obj2);
+console.log(obj2, obj1);
 
 //Task 2
 let ob = {
