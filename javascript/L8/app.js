@@ -34,9 +34,9 @@ let answer = multiply(2, 3, 5, 7, 8);
 console.log(answer);
 
 //4. Funksiya yazin ki, array ve eded verim. Hemin ededden basqa digerlerinden ibaret yeni array qaytarsin Mes, removeElement( [1,2,3,4] ,3 ) // [1,2,4]
-function removeElementFromArray(array, removed) {
+function removeElementFromArray(array, remove) {
   for (let i = 0; i <= array.length; i++) {
-    if (array[i] === removed) {
+    if (array[i] === remove) {
       array.splice(i, 1);
     }
   }
