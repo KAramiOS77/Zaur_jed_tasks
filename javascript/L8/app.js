@@ -19,8 +19,8 @@ function multiplyer(array) {
   }
   return multi;
 }
-let answer = multiplyer(array);
-console.log(answer);
+let hasil = multiplyer(array);
+console.log(hasil);
 
 //3. multiply(a,b,c) funksiyasi yaradin. Men ona istediyim sayda argument versem bele islemelidir, hasilini geri qaytarmalidir.
 function multiply(...massiv) {
