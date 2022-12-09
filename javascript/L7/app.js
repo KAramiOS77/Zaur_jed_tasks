@@ -1,4 +1,5 @@
 //Task 1
+// A: done ✅
 function repeatedSymbolCounter(a, b) {
   let say = 0;
   for (let i of a) {
@@ -10,9 +11,9 @@ function repeatedSymbolCounter(a, b) {
 }
 let cem = repeatedSymbolCounter("KARAM", "A");
 console.log(cem);
-//funksiyani let-e menimsedib sonra cagiranda ve console.loga let-i cixaranda a is not iterable deyir.
 
 //Task 2
+// A: slice ile daha yaxsi olar. Z/O o formada da yazaq
 function capitalize(str) {
   let word = str[0].toUpperCase();
   for (let i = 1; i < str.length; i++) {
@@ -24,6 +25,7 @@ let cap = capitalize("alion");
 console.log(cap);
 
 //Task 3
+// A: isleyirmi? gozlenilen bu-test-ucundur yazisidir.
 function snakeToKebab(str) {
   return str.toLowerCase();
 }
@@ -32,6 +34,7 @@ let kababcase = snakeToKebab("BU_TEST_UCUNDUR");
 console.log(kababcase);
 
 //Task 4
+// A: boslugun index-ini tap ve ona gore slice et. Daha sonra birinci ve ikinci terefi istenilen formada birlesdir ve geri gonder.
 function nameFormat(str) {
   let a = str.split(" ");
   return a[0] + " " + a[1][0] + ".";
@@ -42,10 +45,8 @@ console.log(formatter);
 
 //Task 5
 function ilkHerfiDeyis(str, s) {
-  let ilkherf = str[0];
-  ilkherf = s;
-  return ilkherf + str.slice(1, str.lenght);
-  //  // ya da replacele ede bilerik //   return str.replace(str[0], s);
+  return s + str.slice(1, str.length); //A: length yazmamisan))) sehv yazmisansa nece isleyir?))
+  //  // ya da replacele ede bilerik //   return str.replace(str[0], s);  // A: done ✅
 }
 
 let herfdeyisen = ilkHerfiDeyis("alion", "A");
@@ -56,11 +57,11 @@ function splitSentence(sentence) {
   return sentence.split(" ");
 }
 let cumlebolen = splitSentence(
-  "İstesen neinki cumleleri hetda, daglari bele bolerem"
+  "İstesen neinki cumleleri hetda, daglari bele bolerem" // A: sagol seni ejdaha 🐉
 );
 console.log(cumlebolen);
 
-// Task 7
+// Task 7 //A: done ✅
 function removeCharacterFromString(str, any) {
   let a = str;
   for (let i = 0; i <= str.length; i++) {
@@ -73,8 +74,9 @@ function removeCharacterFromString(str, any) {
 
 let deletechar = removeCharacterFromString("KARAMAA", "A");
 console.log(deletechar);
-// ve ya return str.replaceAll(any, "");
+// ve ya return str.replaceAll(any, ""); // A: daha yaxsi ✅
 
+// A: done ✅
 //Task 8
 function verifyGmail(input) {
   if (input.length >= 15 && input.endsWith("@gmail.com")) {
@@ -92,13 +94,13 @@ function verifyGmail(input) {
 let verified = verifyGmail(prompt("Email adresinizi daxil edin:"));
 console.log(verified);
 
-//Task 9
+//Task 9 A: done ✅
 function dateWriter() {
   return document.write(new Date());
 }
 dateWriter();
 
-// Task 10
+// Task 10  A: done ✅
 function weekDay() {
   const date = new Date();
   if (date.getDay() >= 1 && date.getDay() <= 5) {
@@ -109,22 +111,22 @@ function weekDay() {
 }
 weekDay();
 
-//Task 11
+//Task 11  A: done ✅
 function ezrail(Birth_date) {
   const date = new Date();
   if (date.getFullYear() - Birth_date < 77) {
     alert(`${77 - (date.getFullYear() - Birth_date)} ilin qalib`);
   } else if (date.getFullYear() - Birth_date > 77) {
     alert(
-      `o terefde ${date.getFullYear() - Birth_date - 77} ildi seni axtarirlar `
+      `o terefde ${date.getFullYear() - Birth_date - 77} ildi seni axtarirlar ` // A: 😂
     );
   } else {
-    alert("Tam zamani");
+    alert("Tam zamani"); // A: haydi js, haydi js, haydi, tam zamani tam zamani simdi)))
   }
 }
 ezrail(prompt("Dogum ilini qeyd edin:"));
 
-// Task 12
+// Task 12  A: done ✅
 function timer() {
   const now = Date.now();
   const birthdate = new Date(prompt("il,ay,gun (ilk ay 0) daxil edin:"));
@@ -146,7 +148,7 @@ function timer() {
 }
 timer();
 
-// Task 13
+// Task 13 A: done ✅
 function weekDay() {
   const weekDays = {
     0: "Sunday",
@@ -163,7 +165,7 @@ function weekDay() {
 }
 weekDay();
 
-// Task 14
+// Task 14  A: done ✅
 function whichMonth() {
   const month = {
     0: "January",

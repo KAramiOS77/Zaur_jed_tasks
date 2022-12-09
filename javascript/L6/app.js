@@ -24,6 +24,14 @@ function deepcloneV2(a, b) {
 deepcloneV2(obj1, obj2);
 console.log(obj2, obj1);
 
+// A:  return etmemisen)))
+
+// function deepcloneV2(a, b) {
+//   b = Object.assign({}, a);
+// }
+// deepcloneV2(obj1, obj2);
+// console.log(obj2, obj1);
+
 //Task 2
 let ob = {
   ad: "far",
