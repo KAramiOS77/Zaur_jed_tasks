@@ -267,7 +267,8 @@ console.log(withName);
 // Belə ki, həmin funksiya array alsın, və həmin arrayın elementlərini gizlədib, geriyə gizlədilmiş adlardan ibarət arry qaytarsın.
 // // let arr = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles']
 // hiddenNames(arr); // [al*  re** al***, ]
-let array = ["ali", "reza", "alireza", "muhammad", "coshqun", "eles"];
+
+let array = ["123", "4567", "89012", "345678", "9012345", "67890123"];
 function hiddenNames(arr) {
   return arr.map((element) => {
     return element.replace(element.slice(2, element.length), "*");
@@ -275,5 +276,14 @@ function hiddenNames(arr) {
 }
 let hide = hiddenNames(array);
 console.log(hide);
+
+let array1 = ["ali", "reza", "alireza", "muhammad", "coshqun", "eles"];
+function hiddenNamesV2(arry) {
+  return arry.map((element) => {
+    return element[0] + element[1] + "*".repeat(element.length - 2);
+  });
+}
+let hide1 = hiddenNamesV2(array1);
+console.log(hide1);
 
 //⚠️ EndNote: users.json faylı ilə işləyə bilmədim. Ona görə Arrayı əlavə etdim
