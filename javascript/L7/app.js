@@ -14,6 +14,7 @@ console.log(cem);
 
 //Task 2
 // A: slice ile daha yaxsi olar. Z/O o formada da yazaq
+// A: Fix plz 🐜
 function capitalize(str) {
   let word = str[0].toUpperCase();
   for (let i = 1; i < str.length; i++) {
