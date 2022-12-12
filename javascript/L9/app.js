@@ -231,7 +231,7 @@ const info = [
   },
 ];
 // #task1.  map funksiyasi ile sadece bu obyektin id, username ve email-inden ibaret obyektlerden teskil olunmus  yeni bir array yaradin:
-
+// A: done as 🐉
 const newInfo = info.map(({ id, username, email }) => ({
   id,
   username,
@@ -240,7 +240,7 @@ const newInfo = info.map(({ id, username, email }) => ({
 console.log(newInfo);
 
 // #task2. document.write methodu ile yuxaridaki arrayda olan userlerin username-lerini ve email-lerini ve islediyi shirketin adini ekrana yazdirin.  Break tagindan istifade edin (yeni setire kecmek ucun).
-
+// A: yaxsi olar ki, createElement ile edesen. 
 info.forEach(({ username, email, company }) => {
   document.write(`
   Username: ${username}<br/>
@@ -251,7 +251,7 @@ info.forEach(({ username, email, company }) => {
 
 // #task3. Bir funksiya yazin ki, yuxaridaki arraydan userin adini verim mene hemin obyekti geri qaytarsin. Meselen:
 // getUserName("Leanne Graham")
-
+// A: best killer 🗡
 function getUserName(name) {
   return info.find((elem) => {
     if (elem.name === name) {
@@ -268,6 +268,7 @@ console.log(withName);
 // // let arr = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles']
 // hiddenNames(arr); // [al*  re** al***, ]
 
+// A: done ✅
 let array = ["123", "4567", "89012", "345678", "9012345", "67890123"];
 function hiddenNames(arr) {
   return arr.map((element) => {
@@ -276,6 +277,8 @@ function hiddenNames(arr) {
 }
 let hide = hiddenNames(array);
 console.log(hide);
+
+// A: best killer 🗡
 
 let array1 = ["ali", "reza", "alireza", "muhammad", "coshqun", "eles"];
 function hiddenNamesV2(arry) {
@@ -286,4 +289,5 @@ function hiddenNamesV2(arry) {
 let hide1 = hiddenNamesV2(array1);
 console.log(hide1);
 
+// A: onsuz array kimi elave etmeli idin 👍
 //⚠️ EndNote: users.json faylı ilə işləyə bilmədim. Ona görə Arrayı əlavə etdim
