@@ -51,14 +51,17 @@ const users = [
 const root = document.getElementById("root");
 
 function createElem() {
+  //A: 8? statik verme   
   for (let i = 0; i < 8; i++) {
     const newEl = document.createElement("div");
     root.append(newEl);
-    newEl.className = "newelement" + " " + "box" + i;
+    // A: box+i-ye ehtiyac varmi?
+    newEl.className = "newelement" + " " + "box" + i; 
 
     const photo = document.createElement("img");
     photo.setAttribute("src", `./img/${users[i].img}.jpg`);
     newEl.appendChild(photo);
+    // A: image + i -> ye ehtyac varmi?
     photo.className = "photo" + " " + "image" + i;
 
     const user = document.createElement("h1");
