@@ -1,3 +1,4 @@
+// A: done ✅
 let inputElem = document.getElementById("input");
 let buttonElem = document.getElementById("btn");
 let elemDiameter = document.getElementById("diameter");
