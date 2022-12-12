@@ -1,4 +1,5 @@
 //1. Massiv yaradin.  olcusunu 5e menimsedin ve prompt-la massivi number-lerle doldurun.
+// A: done ✅
 function number() {
   let array = [];
   array.length = 5;
@@ -11,6 +12,7 @@ let arr = number();
 console.log(arr);
 
 //2. Funksiya yazin ki, massivde olan butun elementlerin hasilini ekrana cixarsin.
+// A: done ✅
 let array = [2, 3, 5, 5];
 function multiplyer(array) {
   let multi = 1;
@@ -23,6 +25,7 @@ let hasil = multiplyer(array);
 console.log(hasil);
 
 //3. multiply(a,b,c) funksiyasi yaradin. Men ona istediyim sayda argument versem bele islemelidir, hasilini geri qaytarmalidir.
+// A: done ✅
 function multiply(...massiv) {
   let hasil = 1;
   for (let i = 0; i < massiv.length; i++) {
@@ -34,6 +37,7 @@ let answer = multiply(2, 3, 5, 7, 8);
 console.log(answer);
 
 //4. Funksiya yazin ki, array ve eded verim. Hemin ededden basqa digerlerinden ibaret yeni array qaytarsin Mes, removeElement( [1,2,3,4] ,3 ) // [1,2,4]
+// A: done ✅
 function removeElementFromArray(array, remove) {
   for (let i = 0; i <= array.length; i++) {
     if (array[i] === remove) {
