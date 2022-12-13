@@ -240,15 +240,33 @@ const newInfo = info.map(({ id, username, email }) => ({
 console.log(newInfo);
 
 // #task2. document.write methodu ile yuxaridaki arrayda olan userlerin username-lerini ve email-lerini ve islediyi shirketin adini ekrana yazdirin.  Break tagindan istifade edin (yeni setire kecmek ucun).
-// A: yaxsi olar ki, createElement ile edesen. 
-info.forEach(({ username, email, company }) => {
-  document.write(`
-  Username: ${username}<br/>
-  Email: ${email} <br/>
-  Company: ${company.name}
-  <br/><br/>`);
-});
+// A: yaxsi olar ki, createElement ile edesen.
+// info.forEach(({ username, email, company }) => {
+//   document.write(`
+//   Username: ${username}<br/>
+//   Email: ${email} <br/>
+//   Company: ${company.name}
+//   <br/><br/>`);
+// });
 
+//Task2 with createelement method
+const root = document.getElementById("root");
+function yazar(arrayname) {
+  info.forEach(({ username, email, company }, index) => {
+    const newEl = document.createElement("div");
+    newEl.className = "arrayElem";
+    newEl.style.padding = "1px";
+    const newName = document.createElement("h3");
+    newName.innerHTML = `Username: ${info[index].username}`;
+    const newEmail = document.createElement("h3");
+    newEmail.innerHTML = `Email: ${info[index].email}`;
+    const newCompany = document.createElement("h3");
+    newCompany.innerHTML = `Company Name: ${info[index].company.name}`;
+    root.appendChild(newEl);
+    newEl.append(newName, newEmail, newCompany);
+  });
+}
+yazar(info);
 // #task3. Bir funksiya yazin ki, yuxaridaki arraydan userin adini verim mene hemin obyekti geri qaytarsin. Meselen:
 // getUserName("Leanne Graham")
 // A: best killer 🗡
