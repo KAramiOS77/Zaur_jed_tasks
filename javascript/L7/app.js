@@ -19,16 +19,29 @@ function capitalize(str) {
   let word = str[0].toUpperCase();
   for (let i = 1; i < str.length; i++) {
     word = word + str[i];
+    str.slice(i);
   }
   return word;
 }
 let cap = capitalize("alion");
 console.log(cap);
 
+//Task 2 slice methodu ile
+function capitalizeV2(strV2) {
+  let word = "";
+  let i = strV2.length;
+  word = strV2[0].toUpperCase() + strV2.slice(1, i);
+
+  return word;
+}
+let capV2 = capitalizeV2("karam");
+console.log(capV2);
+
 //Task 3
 // A: isleyirmi? gozlenilen bu-test-ucundur yazisidir.
+// duzelis etdim
 function snakeToKebab(str) {
-  return str.toLowerCase();
+  return str.toLowerCase().replaceAll("_", "-");
 }
 
 let kababcase = snakeToKebab("BU_TEST_UCUNDUR");
@@ -44,9 +57,18 @@ function nameFormat(str) {
 let formatter = nameFormat("Alion GreenHeart");
 console.log(formatter);
 
+//Task 4 index slice
+function nameFormatV2(str) {
+  let newpos = str.indexOf(" ");
+  let formattedName = str.slice(0, newpos + 1) + str[newpos + 1] + ".";
+  return formattedName;
+}
+let formatterV2 = nameFormatV2("Alion GreenHeart");
+console.log(formatterV2);
+
 //Task 5
 function ilkHerfiDeyis(str, s) {
-  return s + str.slice(1, str.length); //A: length yazmamisan))) sehv yazmisansa nece isleyir?))
+  return s + str.slice(1, str.length); //A: length yazmamisan))) sehv yazmisansa nece isleyir?))- duzeltdim, yeqin js de bezen guzeste gedirmis
   //  // ya da replacele ede bilerik //   return str.replace(str[0], s);  // A: done ✅
 }
 
