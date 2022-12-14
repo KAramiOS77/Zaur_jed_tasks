@@ -1,6 +1,7 @@
 // Task 1
 // A: if-e ehtiyac yoxdu. Sadece, callback-e argument kimi ver bitsin))
 // A: if-i sil. callback(a+b) ver bes eder
+// A: done ✅
 function add(a, b, callback) {
   callback(a + b);
 }
