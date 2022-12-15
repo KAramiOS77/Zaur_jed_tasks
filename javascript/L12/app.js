@@ -52,9 +52,11 @@ const root = document.getElementById("root");
 
 function createElem() {
   //A: 8? statik verme - arrayin uzunluguna verdim
+  //A: done ✅   
   for (let i = 0; i < users.length; i++) {
     const newEl = document.createElement("div");
     root.append(newEl);
+    // A: done ✅      
     // A: box+i-ye ehtiyac varmi? bunlari her ehtimala vermisdim belke css de lazim olar sonradan silmedim
     newEl.className = "newelement";
 

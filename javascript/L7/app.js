@@ -14,7 +14,7 @@ console.log(cem);
 
 //Task 2
 // A: slice ile daha yaxsi olar. Z/O o formada da yazaq
-// A: Fix plz 🐜
+// A: Fix plz 🐜 ---
 function capitalize(str) {
   let word = str[0].toUpperCase();
   for (let i = 1; i < str.length; i++) {
@@ -40,6 +40,7 @@ console.log(capV2);
 //Task 3
 // A: isleyirmi? gozlenilen bu-test-ucundur yazisidir.
 // duzelis etdim
+// A: done ✅
 function snakeToKebab(str) {
   return str.toLowerCase().replaceAll("_", "-");
 }
@@ -49,6 +50,7 @@ console.log(kababcase);
 
 //Task 4
 // A: boslugun index-ini tap ve ona gore slice et. Daha sonra birinci ve ikinci terefi istenilen formada birlesdir ve geri gonder.
+// A: done ✅
 function nameFormat(str) {
   let a = str.split(" ");
   return a[0] + " " + a[1][0] + ".";

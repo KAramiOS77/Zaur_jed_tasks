@@ -250,6 +250,7 @@ console.log(newInfo);
 // });
 
 //Task2 with createelement method
+// A: done ✅
 const root = document.getElementById("root");
 function yazar(arrayname) {
   info.forEach(({ username, email, company }, index) => {
