@@ -1,4 +1,4 @@
-// 1. splitByOddAndEven  // arrayi 2 arraya bolsun. birincisi cutlerden teskil olunub, ikincisi teklerden.
+// 1. splitByOddAndEven  // arrayi 2 arraya bolsun. birincisi cutlerden teskil olunub, ikincisi teklerden
 const array = [2, 3, 7, 6, 2, 4, 9];
 
 function splitByOddAndEven(arr) {
