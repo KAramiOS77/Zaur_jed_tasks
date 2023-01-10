@@ -1,0 +1,26 @@
+.ingridiendts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: large;
+}
+.ingNames{
+max-width: 45vw;
+min-width: 200px;
+text-align: center;
+
+
+}
+.ingmeasures{
+max-width: 45vw;
+min-width: 200px;
+text-align: center;
+}
+.heading{
+    text-align: center;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+}
