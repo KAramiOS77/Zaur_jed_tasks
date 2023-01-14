@@ -1,6 +1,6 @@
 // 1. Array constructoruna isEmpty() , removeDuplicates(), removeFalsies(), clear() methodlari elave edin. Diqqet edin ki, bu methodlar butun yaradilan massivlerde olmus olsun. (Array.prototype-a elave edilsin)
 
-let arr = [5, 4, 3, 2, 1, "i am string", null, false];
+let arr = [5, 4, 4, 3, 2, 1, "i am string", null, false, undefined];
 Array.prototype.isEmpty = function () {
   return this.length == 0;
 };
