@@ -1,9 +1,9 @@
-import Yummy from "./component/Yummy";
+import { UserList } from "./component/UserList";
 
 function App() {
   return (
     <>
-      <Yummy />
+      <UserList />
     </>
   );
 }
