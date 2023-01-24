@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchMeal } from "API/meal";
 import styles from "./index.module.css";
 
-const Yummy = ({}) => {
+export const Yummy = ({}) => {
   const [meal, setMeal] = useState({});
 
   useEffect(() => {
@@ -30,4 +30,4 @@ const Yummy = ({}) => {
   );
 };
 
-export default Yummy;
+;
