@@ -1,0 +1,72 @@
+.header{
+    background-color: blue;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: fixed ;   
+    width: 100%;
+    
+}
+
+.header a{
+    color: white;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.main{
+    padding-top: 80px;
+      
+}
+
+.HomeMain{
+    display: flex;
+    justify-content: space-around;
+}
+.HomeMain img{
+    width: 45%;
+}
+
+.AboutMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.AboutMain img{
+    width: 50%;
+              
+}
+
+.footer{
+    background-color: blue;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: white  ; 
+    margin-top: 40px;
+}
+.Contactform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    align-items: center;
+
+}
+.Contactform input{
+    width: 35%;
+}
+.Contactform textarea{
+    width: 35%;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: darkred !important;
+  }
