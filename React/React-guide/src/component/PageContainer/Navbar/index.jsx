@@ -1,3 +1,6 @@
+import { AlertContext } from "context/AlertContext";
+import { ModeContext } from "context/ModeContext";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./index.module.css";
 
@@ -17,12 +20,34 @@ const CustomisedNavbar = ({ to, text }) => {
 };
 
 export const Navbar = ({}) => {
+  const [dark, setDark] = useContext(ModeContext);
+  const showAlert = useContext(AlertContext);
   return (
     <>
       <nav>
         <CustomisedNavbar to="/" text="Home" />
         <CustomisedNavbar to="/about" text="About" />
+        <CustomisedNavbar to="/yummy" text="Yummy" />
+        <CustomisedNavbar to="/login" text="Login" />
+        <CustomisedNavbar to="/starwars" text="Starwars" />
+        <button
+          onClick={() => {
+            setDark((pre) => !pre);
+          }}
+        >
+          {dark ? "☀" : "🌙"}
+        </button>
         
+        <button
+          onClick={() => {
+            showAlert({
+              message: "Salam meem canim gozum necesen",
+              type: "success",
+            });
+          }}
+        >
+          Show Alert
+        </button>
       </nav>
     </>
   );

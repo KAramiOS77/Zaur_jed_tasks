@@ -3,7 +3,10 @@ import { Login } from "component/Login";
 import { Route, Routes } from "react-router";
 import { Home } from "pages/home";
 import { About } from "pages/about";
+import { StarwarsPeople } from "pages/StarwarsPeople";
 import { Starwars } from "pages/Starwars";
+import { StarwarsWithReducer } from "pages/StarwarsWithReducer";
+import { CatBreeds } from "pages/CatBreeds";
 
 export const WebsiteRouting = () => {
   return (
@@ -12,7 +15,10 @@ export const WebsiteRouting = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
-      <Route path="/starwars/:peopleId" element={<Starwars />} />
+      <Route path="/starwars/:peopleId" element={<StarwarsPeople />} />
+      {/* <Route path="/starwars" element={<Starwars />} /> */}
+      <Route path="/starwars-with-reducer" element={<StarwarsWithReducer />} />
+      <Route path="/cats" element={<CatBreeds />} />
     </Routes>
   );
 };
