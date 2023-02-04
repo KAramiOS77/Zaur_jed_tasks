@@ -7,8 +7,6 @@ import { StarwarsPeople } from "pages/StarwarsPeople";
 import { Starwars } from "pages/Starwars";
 import { StarwarsWithReducer } from "pages/StarwarsWithReducer";
 import { CatBreeds } from "pages/CatBreeds";
-import { CatFacts } from "pages/CatFacts";
-import PostsRedux from "pages/PostsRedux";
 
 export const WebsiteRouting = () => {
   return (
@@ -21,8 +19,6 @@ export const WebsiteRouting = () => {
       {/* <Route path="/starwars" element={<Starwars />} /> */}
       <Route path="/starwars-with-reducer" element={<StarwarsWithReducer />} />
       <Route path="/cats" element={<CatBreeds />} />
-      <Route path="/cat-facts" element={<CatFacts />} />
-      <Route path="/posts-redux" element={<PostsRedux />} />
     </Routes>
   );
 };

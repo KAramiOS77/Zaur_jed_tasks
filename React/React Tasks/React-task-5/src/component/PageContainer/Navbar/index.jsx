@@ -30,7 +30,6 @@ export const Navbar = ({}) => {
         <CustomisedNavbar to="/yummy" text="Yummy" />
         <CustomisedNavbar to="/login" text="Login" />
         <CustomisedNavbar to="/starwars" text="Starwars" />
-        <CustomisedNavbar to="/cat-facts" text="CatFacts" />
         <button
           onClick={() => {
             setDark((pre) => !pre);
@@ -38,7 +37,7 @@ export const Navbar = ({}) => {
         >
           {dark ? "☀" : "🌙"}
         </button>
-
+        
         <button
           onClick={() => {
             showAlert({
