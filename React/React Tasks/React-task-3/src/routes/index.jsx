@@ -7,6 +7,7 @@ export const WebsiteRouting = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      {/* A: pathlari lowercase edek zehmet olmasa */}
       <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
     </Routes>

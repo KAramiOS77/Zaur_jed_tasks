@@ -2,7 +2,8 @@ import { PageContainer } from "component/PageContainer";
 import hacker from "../imgaes/hacker.jpeg";
 import styles from "../component/PageContainer/index.module.css";
 
-export const Home = ({}) => {
+// A: default olaraq export etmek daha yaxsidir
+export const Home = ({ }) => {
   return (
     <>
       <PageContainer>

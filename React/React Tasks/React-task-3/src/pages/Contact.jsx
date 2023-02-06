@@ -3,8 +3,9 @@ import { PageContainer } from "component/PageContainer";
 import { useEffect, useRef, useState } from "react";
 import styles from "../component/PageContainer/index.module.css";
 
-export const Contact = ({}) => {
+export const Contact = ({ }) => {
   const [input, setInput] = useState({ email: "", password: "", textmsg: "" });
+  // A: useRef vermek mutleq deyil
   const emailInput = useRef();
   const passwordInput = useRef();
   const textmsgInput = useRef();
