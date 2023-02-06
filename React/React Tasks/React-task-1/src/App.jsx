@@ -5,6 +5,7 @@ import { Main } from "./component/Main";
 function App() {
   return (
     <>
+      {/* A: done as 🐉 */}
       <Header bgColor="blue" text="Mercedes Benz" />
       <Main
         heading="Legendary W210 E-class"
