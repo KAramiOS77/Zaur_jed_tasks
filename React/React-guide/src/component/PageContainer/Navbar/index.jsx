@@ -31,6 +31,7 @@ export const Navbar = ({}) => {
         <CustomisedNavbar to="/login" text="Login" />
         <CustomisedNavbar to="/starwars" text="Starwars" />
         <CustomisedNavbar to="/cat-facts" text="CatFacts" />
+        <CustomisedNavbar to="/mui" text="Mui" />
         <button
           onClick={() => {
             setDark((pre) => !pre);

@@ -9,6 +9,7 @@ import { StarwarsWithReducer } from "pages/StarwarsWithReducer";
 import { CatBreeds } from "pages/CatBreeds";
 import { CatFacts } from "pages/CatFacts";
 import PostsRedux from "pages/PostsRedux";
+import { Mui } from "pages/Mui";
 
 export const WebsiteRouting = () => {
   return (
@@ -23,6 +24,7 @@ export const WebsiteRouting = () => {
       <Route path="/cats" element={<CatBreeds />} />
       <Route path="/cat-facts" element={<CatFacts />} />
       <Route path="/posts-redux" element={<PostsRedux />} />
+      <Route path="/mui" element={<Mui />} />
     </Routes>
   );
 };
